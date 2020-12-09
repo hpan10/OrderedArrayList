@@ -5,4 +5,4 @@ Discussion Summary:
 - Parentheses after the brackets are there for parameter values (or none) to construct the instance
 - Using super.add() inside of the overriding add functions
 - startingCapacity constructor doesn't really make sense to us
-- 
+- Discussed set and when it should throw an exception

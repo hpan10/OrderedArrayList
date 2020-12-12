@@ -31,4 +31,8 @@ public class NoNullArrayList<T> extends ArrayList<T>{
     super.add(index, element);
   }
 
+  public static void main(String[] args) {
+    System.out.println("hi");
+  }
+
 }

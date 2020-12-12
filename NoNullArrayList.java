@@ -17,11 +17,18 @@ public class NoNullArrayList<T> extends ArrayList<T>{
     return super.set(index, element);
   }
 
-  public static void main(String[] args) {
-    NoNullArrayList<String> a = new NoNullArrayList<String>();
-    a.add("hi");
-    System.out.println(a.get(0));
-    System.out.println(a.set(0, "bye"));
-    System.out.println(a.get(0));
+  public boolean add(T element){
+    if (element == null){
+      throw new IllegalArgumentException("You can't input null into a NoNullArrayList!");
+    }
+    return super.add(element);
   }
+
+  public void add(int index, T element){
+    if (element == null){
+      throw new IllegalArgumentException("You can't input null into a NoNullArrayList!");
+    }
+    super.add(index, element);
+  }
+
 }
